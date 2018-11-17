@@ -3,6 +3,10 @@ package liashenko;
 public class MyStringUtils implements StringUtilInterface {
 
     public String reverseString(String input) {
+        if (input == null) {
+            return null;
+        }
+
         char[] inputChars = input.toCharArray();
         StringBuilder result = new StringBuilder();
 
